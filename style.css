@@ -1,0 +1,109 @@
+/* Colors:
+Main-Background: #1f2333;
+Titles: #ECDFCC;
+Text: rgb(21, 243, 220);
+MayB-borders: rgb(21, 243, 220);
+*/
+
+
+/* Background */
+.main-body {
+  background-image: url(images/R.gif);
+  font-family: Verdana, sans-serif;
+  background-repeat: none;
+  background-size:cover
+  
+}
+/* ---------------------- */
+
+/* Title Area */
+ .main-title-cont {
+  display: flex;
+  justify-content: center;
+  margin: 0% 0% -2% 0%
+ }
+
+.main-title {
+  color:#ECDFCC;
+  font-size: 50pt;
+}
+/* ---------------------- */
+
+/* Cool Slogan below title */
+.cool-slogan-cont {
+  margin: -3% 0% 0% 0%;
+  display: flex;
+  justify-content: center;
+  color: rgb(21, 243, 220);
+}
+
+.cool-slogan {
+  font-size: 21pt;
+  font-style: italic
+}
+/* Random Planet Button */
+.random-planet-btn-cont {
+  display: flex;
+  justify-content: center;
+  margin: 4% 0% 4% 0%;
+}
+
+.random-planet-btn {
+  width: 25%;
+  height: 10vh;
+  background-color: #1f2333;
+  border: 3px inset rgb(21, 243, 220);
+  font-size: 22pt;
+  color: #FEFCFD;
+  border-radius:30px;
+  text-align: center;
+  margin: 0% 0% 0% 0%;
+  text-decoration: none;
+}
+/* ---------------------- */
+
+/* Middle Page Content */
+
+.please-center{
+  display: flex;
+  justify-content: center;
+}
+.middle-page-cont {
+  background-color: #1f2333;
+  width: 75%;
+  height: 75vh;
+  border-radius: 20px;
+  border: 3px inset rgb(21, 243, 220);
+}
+
+.planet-header-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.planet-header{
+  color:#ECDFCC
+}
+
+.planet-image-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.planet-image {
+  width: 100%;
+  height: 50vh;
+  border: 3px inset rgb(21, 243, 220);
+}
+
+.stats-header-cont {
+  display: flex; 
+  justify-content: center;
+}
+
+.stats-header {
+  color:#ECDFCC
+}
+
+
+
