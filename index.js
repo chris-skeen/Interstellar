@@ -1,9 +1,9 @@
-// hOCQwcczTwYiUmLHTzxKELJJa327n9cB8gv5hbl9
 var url = "https://api.le-systeme-solaire.net/rest/bodies/"
 
-function data_thing(data) {
-    console.log(data);
-    // data.bodies[0]
+function data_thing(data){
+    var bodies = data.bodies
+    console.log(Math.round(Math.random() * bodies.length-1 ));
+    console.log(bodies[Math.round(Math.random() * bodies.length-1 )]);
 }
 
 fetch(url) // api for the get request
