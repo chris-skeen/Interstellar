@@ -5,6 +5,7 @@ fetch('planets.json')
     .then(response => response.json())
     .then(data => {jsonData = data; data_thing(data, checkForNull)});
 
+// API KEY: 9fd1566478f2224ea0cf7b9a8218a57d0dd673951974424a476e149d049d19d0
 
 
 //  CHECK IF IT EXISTS  -----------------------------------------------------------------------------------------------
@@ -59,6 +60,19 @@ planetButton.addEventListener("click", () => {
         var planetName = document.getElementById('planet-header');
         planetName.innerHTML = arrayReturnedFromfunc[0];
         console.log(arrayReturnedFromfunc[0]);
+
+        let url = `https://www.googleapis.com/customsearch/v1?key=AIzaSyBXu7yjQ0FEsd3bq0XW6tGRjm2vxz-Z21A&cx=47464be6c0bb84052&searchType=image&q=${arrayReturnedFromfunc[0]}+planet`;
+        fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data); // Now you can access the data here
+            const items = data.items; // Assuming items is the array you want
+            console.log(items[0].image);
+            document.getElementById("image").innerHTML = `<img class="planet-image" src="${items[0].image.thumbnailLink}" alt="Hopefully an image of the planet ${arrayReturnedFromfunc[0]}."/>`;
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
 
         // English planet name change
         var englishName = document.getElementById('english-name')
