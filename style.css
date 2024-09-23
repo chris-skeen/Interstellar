@@ -70,10 +70,11 @@ MayB-borders: rgb(21, 243, 220);
 }
 .middle-page-cont {
   background-color: #1f2333;
-  width: 75%;
-  height: 75vh;
+  width: 60%;
+  height: 200vh;
   border-radius: 20px;
   border: 3px inset rgb(21, 243, 220);
+  padding: 0% 10% 0% 10%;
 }
 
 .planet-header-cont {
@@ -96,6 +97,8 @@ MayB-borders: rgb(21, 243, 220);
   border: 3px inset rgb(21, 243, 220);
 }
 
+/* STATS AREA */
+
 .stats-header-cont {
   display: flex; 
   justify-content: center;
@@ -105,5 +108,18 @@ MayB-borders: rgb(21, 243, 220);
   color:#ECDFCC
 }
 
+.cool-line {
+  width: 30%;
+  margin: -7% 0% -7% 0%
+}
 
+.all-stats-headers {
+  color: #ECDFCC;
+  font-size: 23pt;
+}
 
+.all-stats {
+  color: rgb(21, 243, 220);
+  text-align: center;
+  font-weight: normal;
+}
